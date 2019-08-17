@@ -1,0 +1,27 @@
+.headerContainer {
+    position: sticky;
+    top: 0;
+    height: 5em;
+    background: #374B4A;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 33.33% 66.69%;
+}
+
+.headerContainer div {
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 4em;
+    width: 95%;
+}
+
+.navBar {
+    position: relative;
+    left: 50%;
+    width: 50%;
+    display: flex;
+    justify-self: end;
+    justify-content: space-between;
+}
