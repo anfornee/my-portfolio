@@ -1,27 +1,41 @@
 .headerContainer {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
-    height: 5em;
-    background: #374B4A;
+    height: 7em;
     display: grid;
     align-items: center;
-    justify-items: center;
     grid-template-columns: 33.33% 66.69%;
 }
 
-.headerContainer div {
-    color: white;
+.titleContainer {
+    font-size: 2.5em;
+    font-weight: 500;
+    padding-left: 40px;
+}
+
+.title:hover {
+    color: rgb(56, 56, 56);
+}
+
+.navContainer {
     display: flex;
-    align-items: center;
-    height: 4em;
-    width: 95%;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 .navBar {
-    position: relative;
-    left: 50%;
-    width: 50%;
     display: flex;
-    justify-self: end;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 57%;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+    transition: .2s;
+}
+
+a:hover {
+    color: rgb(139, 139, 139);
 }

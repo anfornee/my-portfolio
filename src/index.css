@@ -2,5 +2,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 120vh;
   font-family: avenir;
+  background-image: linear-gradient(#08ffc8, #fff7f7);
 }
