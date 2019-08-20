@@ -6,14 +6,14 @@ import './Header.css';
 export default class Header extends Component {
     render() {
         return (
-            <div className="headerContainer">
-                <div className="titleContainer">
+            <div className="header-container">
+                <div className="title-container">
                     <Link className="title" to="/">
                         Anthony Pereira
                         </Link>
                 </div>
-                <div className="navContainer">
-                    <div className="navBar">
+                <div className="nav-container">
+                    <div className="navbar">
                         <Link to="/about-me">About Me</Link>
                         <Link to="/projects">Projects</Link>
                         <Link to="/blog">Blog</Link>

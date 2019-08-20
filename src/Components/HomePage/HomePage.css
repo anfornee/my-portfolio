@@ -1,0 +1,33 @@
+div {
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    width: 60%; 
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}    
+
+.hero-container img {
+    margin-bottom: 2em;
+    width: 90%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.projects-btn {
+    background: rgb(3, 103, 197);
+    padding: .75em 1.75em;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: white;
+    border-radius: 45px;
+    box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.295);
+}
+
+a {
+    text-decoration: none;
+}
