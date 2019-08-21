@@ -1,10 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import AboutMe from './Components/AboutMe/AboutMe';
-import Blog from './Components/Blog/Blog';
 import Contact from './Components/Contact/Contact';
-import HomePage from './Components/HomePage/HomePage';
+import Footer from './Components/Footer/Footer';
+import HeroSection from './Components/HomePage/HeroSection';
 import Header from './Components/Header/Header';
 import Projects from './Components/Projects/Projects';
 
@@ -16,12 +16,12 @@ function App() {
       <div className="App">
         <Header />
         <div className="main">
-          <Route exact path="/" component={HomePage} />
-          <Route path="/about-me" component={AboutMe} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/blog" component={Blog} />
+          <HeroSection />
+          <AboutMe />
+          <Projects />
+          <Contact />
         </div>
+        <Footer />
       </div>
     </Router>
   );
