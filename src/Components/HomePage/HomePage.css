@@ -4,8 +4,10 @@ div {
 
 .container {
     margin: 0 auto;
+    margin-top: 15em;
+    margin-bottom: 5em;
     width: 60%; 
-    height: 70vh;
+    height: 80%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -18,14 +20,18 @@ div {
     border-radius: 50%;
 }
 
+.hero-text-container {
+    width: 50%;
+}
+
 .projects-btn {
-    background: rgb(3, 103, 197);
+    background: rgb(41, 146, 243);
     padding: .75em 1.75em;
     font-size: 1.6em;
     font-weight: bold;
     color: white;
     border-radius: 45px;
-    box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.295);
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.295);
 }
 
 a {
