@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import './HomePage.css';
+import './HeroSection.css';
 
 import logo from '../../assets/images/IMG_0431.jpg';
 
-export default class HomePage extends Component {
+export default class HeroSection extends Component {
     render() {
         return (
-            <div>
+            <div id="home" >
                 <div className="container">
                     <div className="hero-container">
                         <img src={logo} alt="hero" />

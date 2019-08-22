@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import './Header.css';
 
@@ -8,16 +8,15 @@ export default class Header extends Component {
         return (
             <div className="header-container">
                 <div className="title-container">
-                    <Link className="title" to="/">
+                    <HashLink className="title" to="/#home">
                         Anthony Pereira
-                        </Link>
+                        </HashLink>
                 </div>
                 <div className="nav-container">
                     <div className="navbar">
-                        <Link to="/about-me">About Me</Link>
-                        <Link to="/projects">Projects</Link>
-                        <Link to="/blog">Blog</Link>
-                        <Link to="/contact">Contact</Link>
+                        <HashLink to="/#about">about</HashLink>
+                        <HashLink to="/#projects">projects</HashLink>
+                        <HashLink to="/#contact">contact</HashLink>
                     </div>
                 </div>
             </div>
