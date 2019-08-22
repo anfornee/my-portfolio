@@ -2,9 +2,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
   font-family: avenir;
-  background-color: #00ffc8;
 }
 
 /* #08ffc8, #fff7f7 */
