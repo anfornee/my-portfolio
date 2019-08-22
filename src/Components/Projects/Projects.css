@@ -1,0 +1,20 @@
+.projects {
+    transform: skewY(-4deg);
+    margin-top: 230px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.projects-page-container {
+    transform: skewY(4deg);
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-title {
+    margin: 1.25em 0 .25em;
+    font-weight: 700;
+    font-size: 3em;
+}

@@ -9,14 +9,14 @@ export default class Header extends Component {
             <div className="header-container">
                 <div className="title-container">
                     <HashLink className="title" to="/#home">
-                        Anthony Pereira
+                     ANTHONY PEREIRA
                         </HashLink>
                 </div>
                 <div className="nav-container">
                     <div className="navbar">
-                        <HashLink to="/#about">about</HashLink>
-                        <HashLink to="/#projects">projects</HashLink>
-                        <HashLink to="/#contact">contact</HashLink>
+                        <HashLink smooth to="/#about">about</HashLink>
+                        <HashLink smooth to="/#projects">projects</HashLink>
+                        <HashLink smooth to="/#contact">contact</HashLink>
                     </div>
                 </div>
             </div>
