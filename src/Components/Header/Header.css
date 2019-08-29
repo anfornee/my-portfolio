@@ -1,11 +1,11 @@
 .header-container {
     width: 100%;
     top: 0;
-    height: 7em;
+    height: 5em;
     display: grid;
     align-items: center;
     grid-template-columns: 33.33% 66.66%;
-    background-image: #fff;
+    background: #fff;
 }
 
 .title-container {
@@ -29,7 +29,7 @@
     justify-content: space-around;
     width: 45%;
     margin-right: 3em;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
 }
 

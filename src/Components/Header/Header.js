@@ -6,7 +6,7 @@ import './Header.css';
 export default class Header extends Component {
     render() {
         return (
-            <div className="header-container">
+            <div id="#" className="header-container">
                 <div className="title-container">
                     <HashLink className="title" to="/#home">
                      ANTHONY PEREIRA
