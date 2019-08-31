@@ -84,7 +84,7 @@ a {
 .scroll-icon {
     position: relative;
     left: calc(50% - 20px);
-    bottom: 175px;
+    bottom: 150px;
     animation: move .9s alternate;
     animation-delay: 3s;
     animation-iteration-count: 4;
