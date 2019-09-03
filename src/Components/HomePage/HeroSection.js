@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { HashLink } from 'react-router-hash-link';
 
-import './HeroSection.css';
-
 import logo from '../../assets/images/IMG_0431.jpg';
 import github from '../../assets/images/github-icon.png';
 import instagram from '../../assets/images/instagram-icon.png';
@@ -44,10 +42,13 @@ export default class HeroSection extends Component {
                         <img src={logo} alt="hero" />
                     </div>
                 </div>
-                <div className="scroll-icon">
-                    <img src={scroll} alt="scrool" className="wait" />
-                </div>
+                <HashLink smooth to="/#about">
+                    <div className="scroll-icon">
+                        <img src={scroll} alt="scroll" className="wait" />
+                    </div>
+                </HashLink>
             </div>
         )
     }
 }
+

@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { HashLink } from 'react-router-hash-link';
 
-import './Header.css';
-
 export default class Header extends Component {
     render() {
         return (

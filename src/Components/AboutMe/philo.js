@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './AboutMe.css';
-
 export default function philo(props) {
     return (
         <div class="philo">

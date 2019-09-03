@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { HashLink } from 'react-router-hash-link';
 
-import './Footer.css';
-
 import github from '../../assets/images/github-icon.png';
 import instagram from '../../assets/images/instagram-icon.png';
 import linkedin from '../../assets/images/linkedin-icon.png';
