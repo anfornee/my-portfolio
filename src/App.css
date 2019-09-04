@@ -23,10 +23,18 @@
     color: rgb(56, 56, 56);
 }
 
-.nav-container {
+.nav-container-desktop {
     display: flex;
     justify-content: flex-end;
     width: 100%;
+}
+
+.ham-menu {
+    display: none;
+}
+
+.pop-up-nav {
+    display: none;
 }
 
 .navbar {
@@ -49,6 +57,11 @@ a:hover {
 }
 
 /***************  Hero Section  ***************/
+
+#top {
+    position: absolute;
+    top: 0;
+}
 
 #home {
     margin-top: 5em;
@@ -329,12 +342,12 @@ a {
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
-    box-shadow: 0 0 15px 1px rgb(138, 138, 138);
+    box-shadow: 0 0 15px 1px rgb(224, 224, 224);
 }
 
-.project-picture-container:hover {
+/* .project-picture-container:hover {
     opacity: .5;
-}
+} */
 
 .project-description {
     margin: 0 auto;
@@ -434,7 +447,91 @@ textarea {
 
 /***************  Media Queries  ***************/
 
-@media screen and (max-width: 750px) {}
+@media screen and (max-width: 750px) {
+    .title-container {
+        max-width: 10%;
+    }
+    .title {
+        display: none;
+    }
+    #home {
+        margin-top: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-text-container {
+        min-height: 89vh;
+    }
+    .hero-container {
+        max-height: 0vh;
+        display: none;
+    }
+    .hero-container img {
+        display: none;
+    }
+    .hero-title {
+        margin-bottom: 5em;
+    }
+    .icon-container {
+        margin-top: 0em;
+    }
+    .philo-section {
+        flex-direction: column;
+        width: 100%;
+    }
+    .philo-container {
+        width: 100%;
+    }
+    .philo {
+        min-width: 90%;
+    }
+    #about {
+        min-height: 1490px;
+    }
+    .about-me {
+        width: 85%;
+        text-align: center;
+        font-size: .75em;
+    }
+    .about-me h1 {
+        font-weight: 700;
+        font-size: 2.5em;
+        margin-bottom: 0;
+    }
+    .projects {
+        height: auto;
+        font-size: .75em;
+    }
+    .projects-container {
+        width: 93%;
+        display: flex;
+        flex-direction: column;
+    }
+    .project-container {
+        font-size: 10px;
+        text-align: center;
+    }
+    .project-picture-container {
+        max-height: 230px;
+        max-width: 230px;
+        background: linear-gradient(126deg, rgba(0, 212, 255, 1) 0%, rgba(195, 255, 193, 1) 100%);
+        border-radius: 20px;
+        transition: .5s;
+    }
+    .project-description h2 {
+        font-size: 35px;
+    }
+    .project-description p {
+        margin-top: -15px;
+        text-align: center;
+        font-size: 15px;
+    }
+    .contact-container {
+        padding-top: 25px;
+        min-width: 80%;
+        font-size: .75em;
+    }
+}
 
 @media screen and (max-width: 1024px) {
     .App {
@@ -447,12 +544,58 @@ textarea {
         border-bottom: solid 1px #4DC8FF;
     }
     .title-container {
+        min-width: 500px;
         font-size: 1.55em;
         margin-left: 1em;
     }
     .navbar {
         width: 50%;
         margin-right: 1em;
+    }
+    .nav-container-desktop {
+        display: none;
+    }
+    .ham-menu {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 1.5em;
+    }
+    .ham-menu img {
+        max-width: 35px;
+        max-height: 35px;
+    }
+    .pop-up-nav {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        border: 1px solid #777777;
+        width: 250px;
+        background: #fff;
+        z-index: 2;
+        font-size: 2em;
+        transition: .5s;
+    }
+    .close-container img {
+        max-width: 35px;
+        max-height: 35px;
+        transform: rotate(45deg);
+        padding-top: 1em;
+        margin-left: 20px;
+    }
+    .pop-up-nav-items {
+        height: 300px;
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .pop-up-nav-items a {
+        min-width: 100%;
+        padding-top: 2em;
+        align-self: center;
     }
     .container {
         flex-direction: column;
@@ -508,7 +651,7 @@ textarea {
         top: -40px;
         position: relative;
         transform: skewY(4deg);
-        width: 45%;
+        width: 35%;
         height: auto;
         border-radius: 50%;
     }
@@ -607,7 +750,7 @@ textarea {
     }
     .contact-container {
         padding-top: 25px;
-        width: 60%;
+        min-width: 60%;
     }
     input {
         font-size: 30px;
@@ -617,5 +760,14 @@ textarea {
     }
     .footer {
         height: 7em;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .title-container {
+        font-size: 1.5em;
+    }
+    .contact-container {
+        width: 30%;
     }
 }
