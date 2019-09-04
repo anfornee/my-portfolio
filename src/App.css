@@ -325,7 +325,7 @@ a {
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
-    border: 3px solid #C3FFC1;
+    box-shadow: 0 0 15px 1px rgb(138, 138, 138);
 }
 
 .project-picture-container:hover {
@@ -548,5 +548,45 @@ textarea {
         font-weight: 700;
         font-size: 3em;
         margin-bottom: 0;
+    }
+    .projects{
+        padding-top: 430px;
+        padding-bottom: 525px;
+    }
+    .projects-container {
+        width: 93%;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(3, 33.33%);
+    }
+    .project-picture-container {
+        height: 280px;
+        width: 280px;
+        background: linear-gradient(126deg, rgba(0, 212, 255, 1) 0%, rgba(195, 255, 193, 1) 100%);
+        border-radius: 20px;
+        transition: .5s;
+    }
+    .project-description {
+        margin-top: 2em;
+        margin-bottom: 5em;
+        width: 80%;
+        text-align: center;
+    }
+    .project-description h2 {
+        font-size: 35px;
+    }
+    .project-description p {
+        margin-top: -15px;
+        text-align: left;
+        font-size: 23px;
+    }
+    .contact-container {
+        padding-top: 25px;
+        width: 60%;
+    }
+    input {
+        font-size: 30px;
+    }
+    textarea {
+        font-size: 30px;
     }
 }
