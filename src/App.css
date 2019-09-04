@@ -4,6 +4,9 @@
     width: 100%;
     top: 0;
     height: 5em;
+    position: fixed;
+    z-index: 1;
+    border-bottom: solid 1px #4DC8FF;
     display: grid;
     align-items: center;
     grid-template-columns: 33.33% 66.66%;
@@ -48,6 +51,7 @@ a:hover {
 /***************  Hero Section  ***************/
 
 #home {
+    margin-top: 5em;
     background: #4DC8FF;
     height: 110vh;
 }
@@ -430,14 +434,17 @@ textarea {
 
 /***************  Media Queries  ***************/
 
-@media only screen and (min-width: 650px) {}
+@media screen and (max-width: 750px) {}
 
-@media only screen and (min-width: 760px) {
+@media screen and (max-width: 1024px) {
     .App {
         overflow-x: hidden;
     }
     .header-container {
-        height: 4em;
+        height: 5em;
+        position: fixed;
+        z-index: 1;
+        border-bottom: solid 1px #4DC8FF;
     }
     .title-container {
         font-size: 1.55em;
@@ -451,7 +458,8 @@ textarea {
         flex-direction: column;
     }
     #home {
-        height: auto;
+        margin-top: 5em;
+        height: 102vh;
     }
     .hero-text-container {
         display: flex;
@@ -487,19 +495,22 @@ textarea {
         border-radius: 45px;
     }
     .hero-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
+        height: 50vh;
         background: #C3FFC1;
         text-align: center;
-        padding: 4.5em 0em;
         transform: skewY(-4deg);
     }
     .hero-container img {
+        top: -40px;
+        position: relative;
         transform: skewY(4deg);
-        width: 50%;
-        margin-bottom: 4.5em;
+        width: 45%;
         height: auto;
         border-radius: 50%;
-        justify-self: center;
     }
     .hero-desc-container-tablet {
         margin: 0 auto;
@@ -535,11 +546,14 @@ textarea {
         font-weight: 400;
         font-size: 1.25em;
     }
-    .about-text-container {
-        max-height: 120px;
+    #about {
+        height: 950px;
     }
-    .about-text{
-        margin-top: 60px;
+    .about-text-container {
+        height: 160px;
+    }
+    .about-text {
+        margin-top: 80px;
     }
     .about-me {
         top: -50px;
@@ -549,9 +563,21 @@ textarea {
         font-size: 3em;
         margin-bottom: 0;
     }
-    .projects{
-        padding-top: 430px;
-        padding-bottom: 525px;
+    .projects {
+        height: auto;
+        padding: 0 0 3em;
+    }
+    .projects-page-container {
+        min-height: 200px;
+        justify-self: flex-start;
+    }
+    .project-blue-line {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        height: 3px;
+        width: 88px;
+        border-radius: 3px;
+        background-color: #4DC8FF;
     }
     .projects-container {
         width: 93%;
@@ -588,5 +614,8 @@ textarea {
     }
     textarea {
         font-size: 30px;
+    }
+    .footer {
+        height: 7em;
     }
 }
