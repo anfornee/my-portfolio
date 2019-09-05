@@ -8,36 +8,14 @@ export default class Header extends Component {
 
     state = {
         popUpNav: {
-            display: "flex",
-            justifyContent: "center",
-            position: "absolute",
-            height: "100vh",
-            top: "0",
             right: "-251px",
-            border: "1px solid #777777",
-            width: "250px",
-            background: "#fff",
-            zIndex: "2",
-            fontSize: "2em",
-            transition: ".5s",
         }
     }
 
     openNav = () => {
         this.setState({
             popUpNav: {
-                display: "flex",
-                justifyContent: "center",
-                position: "absolute",
-                height: "100vh",
-                top: "0",
                 right: "0px",
-                border: "1px solid #777777",
-                width: "250px",
-                background: "#fff",
-                zIndex: "2",
-                fontSize: "2em",
-                transition: ".5s",
             }
         })
     }
@@ -45,18 +23,7 @@ export default class Header extends Component {
     closeNav = () => {
         this.setState({
             popUpNav: {
-                display: "flex",
-                justifyContent: "center",
-                position: "absolute",
-                height: "100vh",
-                top: "0",
                 right: "-251px",
-                border: "1px solid #777777",
-                width: "250px",
-                background: "#fff",
-                zIndex: "2",
-                fontSize: "2em",
-                transition: ".5s",
             }
         })
     }
@@ -72,7 +39,7 @@ export default class Header extends Component {
                 <div className="ham-menu">
                     <img onClick={this.openNav} src={ham} alt="menu" />
                 </div>
-                <div style={this.state.popUpNav}>
+                <div className="pop-up-nav" style={this.state.popUpNav}>
                     <div className="pop-up-nav-items">
                         <div onClick={this.closeNav} className="close-container">
                             <img src={close} alt="close" />

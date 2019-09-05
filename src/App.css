@@ -37,6 +37,10 @@
     display: none;
 }
 
+.pop-up-nav-items {
+    display: none;
+}
+
 .navbar {
     display: flex;
     justify-content: space-around;
@@ -576,7 +580,7 @@ textarea {
         background: #fff;
         z-index: 2;
         font-size: 2em;
-        transition: .5s;
+        transition: .3s;
     }
     .close-container img {
         max-width: 35px;
