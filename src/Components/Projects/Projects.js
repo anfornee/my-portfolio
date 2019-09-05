@@ -5,8 +5,9 @@ import { projects } from './projectlist';
 
 const Projects = () => (
     <div className="projects" >
+        <div id="projects"></div>
         <div className="projects-page-container">
-            <h1 id="projects" className="projects-title">Projects</h1>
+            <h1 className="projects-title">Projects</h1>
             <div className="project-blue-line"></div>
         </div>
         <div className="projects-container">
