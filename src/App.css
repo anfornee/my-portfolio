@@ -147,7 +147,7 @@ a:hover {
 }
 
 .icon-container {
-    width: 257px;
+    width: 175px;
     display: flex;
     justify-content: space-between;
 }
@@ -456,7 +456,7 @@ textarea {
 .footer-icon-container {
     position: relative;
     top: 3em;
-    width: 257px;
+    width: 175px;
 }
 
 .footer-scroll-icon {
@@ -491,6 +491,20 @@ textarea {
     }
     .hero-title {
         margin-bottom: 5em;
+    }
+    .projects-btn {
+        margin-top: 0px;
+        margin-bottom: 40px;
+        background: #C3FFC1;
+        width: 175px;
+        min-height: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.25em;
+        font-weight: bold;
+        color: black;
+        border-radius: 45px;
     }
     .icon-container {
         margin-top: 0em;
