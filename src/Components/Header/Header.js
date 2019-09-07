@@ -32,7 +32,7 @@ export default class Header extends Component {
         return (
             <div id="#" className="header-container">
                 <div className="title-container">
-                    <HashLink className="title" to="/#top">
+                    <HashLink smooth className="title" to="/#top">
                         ANTHONY PEREIRA
                                 </HashLink>
                 </div>

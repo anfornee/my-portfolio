@@ -144,6 +144,13 @@ a:hover {
     font-weight: bold;
     color: black;
     border-radius: 45px;
+    transition: .2s;
+}
+
+.projects-btn:hover {
+    background: rgb(199, 248, 198);
+    box-shadow: 0 0 5px 1px #777777;
+    color: #3a3a3a;
 }
 
 .icon-container {
@@ -581,7 +588,7 @@ textarea {
         text-align: center;
         font-size: 15px;
     }
-    .contact{
+    .contact {
         height: 300px;
         width: 100%;
         padding: 0;
@@ -723,6 +730,16 @@ textarea {
         display: inherit;
         padding-bottom: 25px;
         width: 80%;
+    }
+    .icon-container img {
+        box-shadow: 0 0 0 #777777;
+        width: 40px;
+        transition: .4s;
+    }
+    .icon-container img:hover {
+        box-shadow: 0 0 0 #777777;
+        filter: invert(0%);
+        border-radius: 0;
     }
     .scroll-icon {
         display: none;
