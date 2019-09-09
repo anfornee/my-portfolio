@@ -6,6 +6,7 @@ const Project = (props) => (
             <img className="project-image" src={props.project.image} alt="project logo" />
         </div>
         <div className="project-description">
+            <a href={props.project.link}>View code</a>
             <h2>{props.project.title}</h2>
             <p>{props.project.description}</p>
         </div>
