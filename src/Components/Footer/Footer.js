@@ -5,7 +5,7 @@ import Icons from '../Icons/Icons';
 import scroll from '../../assets/images/scroll-icon@2x.png';
 
 const Footer = () => (
-    <div className="farts">
+    <div className="footer-block">
         <div className="footer">
             <HashLink smooth to="/#top" className="footer-scroll-icon">
                 <img src={scroll} alt="scroll" />
