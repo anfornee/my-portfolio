@@ -24,7 +24,7 @@ export const projects = [
         "title": "Angular Todo",
         "description": "Add and view details of todo. Also be able to complete/remove todo from list.",
         "image": todo,
-        "link": "https://github.com/anfornee/todo-list",
+        "link": "https://github.com/anfornee/angular-todo",
         "id": 3
     },
     {
