@@ -1,5 +1,6 @@
 import React from 'react'
 import Philo from './philo'
+import LimeBack from '../Gradients/LimeBack'
 
 import { philos } from './philolist'
 
@@ -16,6 +17,7 @@ const AboutMe = () => (
             />
           )}
         </div>
+        <LimeBack />
         <div className='about-text-container'>
           <div className='about-text'>
             <div className='about-me'>

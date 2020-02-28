@@ -14,7 +14,7 @@ const HeroSection = () => (
           <div className='hero-title'>
             <h1>Good looking code.</h1>
           </div>
-          <HashLink smooth to='/#projects' className='projects-btn'>My Projects</HashLink>
+          <HashLink smooth to='/#projects-section' className='projects-btn'>My Projects</HashLink>
           <Icons />
         </div>
       </div>
@@ -22,7 +22,7 @@ const HeroSection = () => (
                 <img src={logo} alt='hero' />
             </div> */}
     </div>
-    <HashLink smooth to='/#about'>
+    <HashLink smooth to='/#about-section'>
       <div className='scroll-icon'>
         <img src={scroll} alt='scroll' className='wait' />
       </div>

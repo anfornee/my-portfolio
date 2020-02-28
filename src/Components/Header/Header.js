@@ -34,7 +34,7 @@ export default class Header extends Component {
         <div className='title-container'>
           <HashLink smooth className='title' to='/#top'>
             ANTHONY PEREIRA
-                                </HashLink>
+          </HashLink>
         </div>
         <div className='ham-menu'>
           <img onClick={this.openNav} src={ham} alt='menu' />
@@ -44,15 +44,15 @@ export default class Header extends Component {
             <div onClick={this.closeNav} className='close-container'>
               <img src={close} alt='close' />
             </div>
-            <HashLink smooth to='/#about' onClick={this.closeNav}>about</HashLink>
+            <HashLink smooth to='/#blue-forward' onClick={this.closeNav}>about</HashLink>
             <HashLink smooth to='/#projects' onClick={this.closeNav}>projects</HashLink>
             <HashLink smooth to='/#contact' onClick={this.closeNav}>contact</HashLink>
           </div>
         </div>
         <div className='nav-container-desktop'>
           <div className='navbar'>
-            <HashLink smooth to='/#about'>about</HashLink>
-            <HashLink smooth to='/#projects'>projects</HashLink>
+            <HashLink smooth to='/#about-section'>about</HashLink>
+            <HashLink smooth to='/#projects-section'>projects</HashLink>
             <HashLink smooth to='/#contact'>contact</HashLink>
           </div>
         </div>
