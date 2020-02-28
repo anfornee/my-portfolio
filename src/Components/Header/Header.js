@@ -3,6 +3,7 @@ import { HashLink } from 'react-router-hash-link';
 
 import ham from '../../assets/images/ham-icon.png';
 import close from '../../assets/images/x-icon.png';
+import avatar from '../../assets/images/IMG_1129_smaller.JPG'
 
 export default class Header extends Component {
 
@@ -33,7 +34,8 @@ export default class Header extends Component {
       <div id='#' className='header-container'>
         <div className='title-container'>
           <HashLink smooth className='title' to='/#top'>
-            ANTHONY PEREIRA
+            <img src={avatar} alt='A decently handsome fella!' />
+            <span>ANTHONY PEREIRA</span>
           </HashLink>
         </div>
         <div className='ham-menu'>
