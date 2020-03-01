@@ -243,7 +243,7 @@ a {
 }
 
 .philo-section {
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-around;
     padding: 3% 0 0;
@@ -253,6 +253,7 @@ a {
     display: flex;
     flex-direction: column;
     max-width: 300px;
+    padding: 0 3em;
 }
 
 .philo-icon {
@@ -306,7 +307,7 @@ a {
 .about-me p {
     text-align: center;
     font-weight: 400;
-    font-size: 1.50em;
+    font-size: 1.25em;
 }
 
 /***************  Project Section  ***************/
@@ -646,7 +647,7 @@ textarea {
         font-size: 35px;
     }
     .project-description p {
-        font-size: 23px;
+        font-size: 1.25em;
     }
     .contact-container {
         padding-top: 25px;
@@ -696,7 +697,7 @@ textarea {
         width: 100%;
     }
     .philo {
-        min-width: 90%;
+        min-width: 75%;
     }
     .about-me {
         padding: 4% 0 5%;

@@ -9,7 +9,7 @@ import testGif from '../../assets/images/project-images/source.gif'
 export const projects = [
   {
     title: 'React Countdown',
-    description: 'React front end retrieves events from MongoDB using Express and displays the title and date as well as a countdown until that day. Can add new events.',
+    description: 'React front end retrieves events from MongoDB using Express.',
     image: countdown,
     gif: testGif,
     link: 'https://github.com/anfornee/countdown-react-express-mongodb-app',
