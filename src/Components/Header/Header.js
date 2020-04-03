@@ -35,7 +35,7 @@ export default class Header extends Component {
         <div className='title-container'>
           <HashLink smooth className='title' to='/#top'>
             <img src={avatar} alt='A decently handsome fella!' />
-            <span>ANTHONY PEREIRA</span>
+            <p>ANTHONY PEREIRA</p>
           </HashLink>
         </div>
         <div className='ham-menu'>

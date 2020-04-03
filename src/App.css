@@ -14,9 +14,19 @@
 }
 
 .title-container {
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 300;
     margin-left: 3em;
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title p {
+    margin: 0 0 0 1em;
 }
 
 .title img {
@@ -25,13 +35,6 @@
     object-fit: cover;
     border-radius: 50%;
     position: relative;
-    top: .2em;
-}
-
-.title-container span {
-    position: relative;
-    bottom: .5em;
-    left: .5em;
 }
 
 .title:hover {
@@ -665,7 +668,7 @@ textarea {
 }
 
 @media screen and (max-width: 750px) {
-    .title span {
+    .title p {
         display: none;
     }
     .hero-text-container {
