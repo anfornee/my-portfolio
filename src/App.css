@@ -214,9 +214,11 @@ a {
     0% {
         opacity: 0;
     }
+
     75% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -226,6 +228,7 @@ a {
     0% {
         transform: translateY(0px);
     }
+
     100% {
         transform: translateY(15px);
     }
@@ -410,7 +413,7 @@ a {
 .project-demo-container {
     position: fixed;
     top: 0;
-    background: rgba(0,0,0,.75);
+    background: rgba(0, 0, 0, .75);
     height: 100%;
     width: 100%;
     display: flex;
@@ -421,7 +424,7 @@ a {
 }
 
 .project-demo-title {
-    width: 50%;
+    width: 70%;
     color: white;
     text-align: center;
     position: relative;
@@ -432,7 +435,7 @@ a {
 }
 
 .project-video-container {
-    width: 50%;
+    width: 70%;
     z-index: 100;
 }
 
@@ -551,6 +554,7 @@ textarea {
         font-size: 1.5em;
         position: relative;
     }
+
     .contact-container {
         width: 30%;
     }
@@ -560,27 +564,33 @@ textarea {
     .App {
         overflow-x: hidden;
     }
+
     .title-container {
         min-width: 500px;
         font-size: 1.55em;
         margin-left: 1em;
     }
+
     .navbar {
         width: 50%;
         margin-right: 1em;
     }
+
     .nav-container-desktop {
         display: none;
     }
+
     .ham-menu {
         display: flex;
         justify-content: flex-end;
         margin-right: 1.5em;
     }
+
     .ham-menu img {
         max-width: 35px;
         max-height: 35px;
     }
+
     .pop-up-nav {
         display: flex;
         justify-content: center;
@@ -595,6 +605,7 @@ textarea {
         font-size: 1.5em;
         transition: .3s;
     }
+
     .close-container img {
         max-width: 35px;
         max-height: 35px;
@@ -602,6 +613,7 @@ textarea {
         padding-top: 1em;
         margin-left: 20px;
     }
+
     .pop-up-nav-items {
         height: 100px;
         min-width: 100%;
@@ -609,14 +621,17 @@ textarea {
         flex-direction: column;
         text-align: center;
     }
+
     .pop-up-nav-items a {
         min-width: 100%;
         padding-top: 1em;
         align-self: center;
     }
+
     .container {
         flex-direction: column;
     }
+
     .projects-btn {
         margin-top: 0px;
         margin-bottom: 40px;
@@ -631,65 +646,80 @@ textarea {
         color: black;
         border-radius: 45px;
     }
+
     .icon-container img {
         box-shadow: 0 0 0 #777777;
         width: 40px;
         transition: .4s;
     }
+
     .icon-container img:hover {
         box-shadow: 0 0 0 #777777;
         filter: invert(0%);
         border-radius: 0;
     }
+
     .scroll-icon {
         display: none;
     }
+
     .philo-section {
         width: 90%;
     }
+
     .philo {
         width: 30%;
     }
+
     .philo-icon {
         width: 70px;
         height: 70px;
     }
+
     .blue-line {
         width: 50px;
     }
+
     .philo-text h4 {
         width: 100%;
         font-weight: 400;
         font-size: 1.25em;
     }
+
     /* #about {
         height: 950px;
     } */
     .about-me {
         top: initial;
     }
+
     .about-me h1 {
         font-weight: 700;
         font-size: 3em;
         margin-bottom: 0;
     }
+
     .projects {
         padding: 0;
     }
+
     .projects-page-container {
         margin-bottom: 1%;
     }
+
     .project-blue-line {
         height: 3px;
         width: 88px;
         border-radius: 3px;
         background-color: #4DC8FF;
     }
+
     .projects-container {
         width: 93%;
         grid-template-columns: repeat(2, 50%);
         grid-template-rows: repeat(3, 33.33%);
     }
+
     .project-picture-container {
         height: 280px;
         width: 280px;
@@ -697,26 +727,46 @@ textarea {
         border-radius: 20px;
         transition: .5s;
     }
+
+    .image-overlay-message {
+        height: 280px;
+        width: 280px;
+    }
+
+    .project-demo-title {
+        width: 80%;
+    }
+
+    .project-video-container {
+        width: 80%;
+    }
+
     .project-description {
         width: 80%;
         text-align: center;
     }
+
     .project-description h2 {
         font-size: 35px;
     }
+
     .project-description p {
         font-size: 1.25em;
     }
+
     .contact-container {
         padding-top: 25px;
         width: 60%;
     }
+
     input {
         font-size: 30px;
     }
+
     textarea {
         font-size: 30px;
     }
+
     .footer {
         height: 7em;
     }
@@ -726,13 +776,15 @@ textarea {
     .title p {
         display: none;
     }
+
     .hero-text-container {
         height: 100vh;
     }
-    
+
     .text-container {
         padding: 0 10%;
     }
+
     .projects-btn {
         margin: 0 0 40px;
         background: #C3FFC1;
@@ -746,39 +798,48 @@ textarea {
         color: black;
         border-radius: 45px;
     }
+
     .image-overlay-message {
         display: none;
     }
+
     .icon-container {
         margin-top: 0em;
     }
+
     .philo-section {
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
+
     .philo {
         min-width: 75%;
     }
+
     .about-me {
         padding: 4% 0 5%;
         width: 85%;
         text-align: center;
         top: -25px;
     }
+
     .about-me h1 {
         font-weight: 700;
         font-size: 2.5em;
         margin-bottom: 0;
     }
+
     .projects-container {
         width: 93%;
         display: flex;
         flex-direction: column;
     }
+
     .project-container {
         text-align: center;
     }
+
     .project-picture-container {
         max-height: 230px;
         max-width: 230px;
@@ -786,17 +847,21 @@ textarea {
         border-radius: 20px;
         transition: .5s;
     }
+
     .project-description h2 {
         font-size: 35px;
     }
+
     .project-description p {
         font-size: 1.25em;
     }
+
     .contact {
         height: 250px;
         width: 100%;
         padding: 10% 0 0;
     }
+
     .contact-container {
         padding: 0;
         margin: 0;
@@ -804,6 +869,7 @@ textarea {
         font-size: .75em;
         display: inherit;
     }
+
     .contact-container p {
         font-size: 1.75em;
     }
@@ -813,6 +879,7 @@ textarea {
     .hero-text-container {
         height: 60vh;
     }
+
     .text-container {
         font-size: .8em;
     }
