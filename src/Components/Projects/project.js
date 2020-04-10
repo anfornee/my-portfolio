@@ -7,9 +7,11 @@ export default class Project extends Component {
   }
 
   handleMouseEnter = () => {
-    this.setState({
-      background: this.props.project.gif
-    })
+    if (this.props.project.gif) {
+      this.setState({
+        background: this.props.project.gif
+      })
+    }
   }
 
   handleMouseLeave = () => {

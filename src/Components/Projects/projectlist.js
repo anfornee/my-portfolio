@@ -7,7 +7,6 @@ import soundbridge from '../../assets/images/project-images/soundbridge.png'
 import soundbridgeGif from '../../assets/images/project-images/soundbridgeDemo.gif'
 import responsive from '../../assets/images/project-images/responsive-example.png'
 import lumdb from '../../assets/images/project-images/lumdb.png'
-import testGif from '../../assets/images/project-images/source.gif'
 
 export const projects = [
   {
@@ -30,7 +29,7 @@ export const projects = [
     title: 'Angular Todo',
     description: 'Add and view details of todo. Also be able to complete/remove todo from list.',
     image: todo,
-    gif: testGif,
+    gif: '',
     link: 'https://github.com/anfornee/angular-todo',
     id: 3
   },
@@ -46,7 +45,7 @@ export const projects = [
     title: 'Responsive Template',
     description: 'Template responsive website completely built with HTML/CSS and minimal JavaScript.',
     image: responsive,
-    gif: testGif,
+    gif: '',
     link: 'https://github.com/anfornee/responisive-template',
     id: 5
   },
@@ -54,7 +53,7 @@ export const projects = [
     title: 'React Movie Database',
     description: 'React app hitting a movie database API and displaying clickable images. Uses React Overdrive.',
     image: lumdb,
-    gif: testGif,
+    gif: '',
     link: 'https://github.com/anfornee/simple-movie-db',
     id: 6
   }
