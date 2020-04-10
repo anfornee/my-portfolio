@@ -6,7 +6,6 @@ import close from '../../assets/images/x-icon.png'
 
 const ProjectDemo = props => {
   const project = props.location.state.project
-  console.log(project)
   return (
     <div className='project-demo-container'>.
       <div className='project-demo-title'>
