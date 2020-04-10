@@ -365,6 +365,27 @@ a {
     background: linear-gradient(126deg, rgba(0, 212, 255, 1) 0%, rgba(195, 255, 193, 1) 100%);
     border-radius: 20px;
     transition: .5s;
+    position: relative;
+}
+
+.image-overlay-message {
+    transition: .3s;
+    position: absolute;
+    top: 0;
+    height: 260px;
+    width: 260px;
+    border-radius: 20px;
+    background: black;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.25em;
+}
+
+.image-overlay-message:hover {
+    opacity: .75;
 }
 
 .project-image {
@@ -375,19 +396,53 @@ a {
     box-shadow: 0 0 15px 1px rgb(224, 224, 224);
 }
 
-/* .project-picture-container:hover {
-    opacity: .5;
-} */
-
 .project-description {
     margin: 0 auto;
     margin-bottom: 35px;
-    width: 60%;
+    width: 90%;
     text-align: center;
 }
 
 .project-description p {
     margin-top: -15px;
+}
+
+.project-demo-container {
+    position: fixed;
+    top: 0;
+    background: rgba(0,0,0,.75);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+
+.project-demo-title {
+    width: 50%;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.project-demo-title h1 {
+    margin: 0 0 .5em;
+}
+
+.project-video-container {
+    width: 50%;
+    z-index: 100;
+}
+
+.demo-close {
+    width: 40px;
+    position: absolute;
+    top: 3px;
+    transform: rotate(45deg);
+    left: 0;
+    filter: invert(1)
 }
 
 /***************  Contact Section  ***************/
@@ -690,6 +745,9 @@ textarea {
         font-weight: bold;
         color: black;
         border-radius: 45px;
+    }
+    .image-overlay-message {
+        display: none;
     }
     .icon-container {
         margin-top: 0em;

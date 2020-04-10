@@ -1,37 +1,33 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export default class Project extends Component {
 
   state = {
-    background: this.props.project.image
+    background: this.props.project.image,
   }
 
-  handleMouseEnter = () => {
-    if (this.props.project.gif) {
-      this.setState({
-        background: this.props.project.gif
-      })
-    }
-  }
-
-  handleMouseLeave = () => {
-    this.setState({
-      background: this.props.project.image
-    })
-  }
-
-  render () {
+  render() {
     const project = this.props.project
+    const demoLink = `/project-demo/${project.id}`
     return (
       <div className='project-container'>
         <div className='project-picture-container'>
           <img
             className='project-image'
-            onMouseEnter={this.handleMouseEnter}
-            onMouseLeave={this.handleMouseLeave}
             src={this.state.background}
             alt='project logo'
           />
+          <Link 
+            to={{
+              pathname: demoLink,
+              state: {
+                project
+              }
+            }}
+            className='image-overlay-message'>
+            <p>View Demo</p>
+          </Link>
         </div>
         <div className='project-description'>
           <a href={project.link}>View code</a>

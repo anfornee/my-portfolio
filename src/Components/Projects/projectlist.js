@@ -1,43 +1,46 @@
 import countdown from '../../assets/images/project-images/countdown.png'
-import countdownGif from '../../assets/images/project-images/countdownGif.gif'
+import countdownDemo from '../../assets/images/project-demos/countdown-demo.mov'
 import weather from '../../assets/images/project-images/react-weather.png'
-import weatherGif from '../../assets/images/project-images/weatherGif.gif'
-import todo from '../../assets/images/project-images/angular-todo.png'
+import weatherDemo from '../../assets/images/project-demos/weather-demo.mov'
+import sozoPro from '../../assets/images/project-images/sōzōpro.png'
+import sozoProDemo from '../../assets/images/project-demos/sozopro-demo.mov'
 import soundbridge from '../../assets/images/project-images/soundbridge.png'
-import soundbridgeGif from '../../assets/images/project-images/soundbridgeDemo.gif'
+import soundbridgeDemo from '../../assets/images/project-demos/soundbridge-demo.mov'
 import responsive from '../../assets/images/project-images/responsive-example.png'
+import responsiveDemo from '../../assets/images/project-demos/template-demo.mov'
 import lumdb from '../../assets/images/project-images/lumdb.png'
+import lumdbDemo from '../../assets/images/project-demos/moviedb-demo.mov'
 
 export const projects = [
   {
     title: 'React Countdown',
-    description: 'React front end retrieves events from MongoDB using Express.',
+    description: 'Create a profile and add/delete events with thier own countdown timers. MERN stack web app.',
     image: countdown,
-    gif: countdownGif,
+    demo: countdownDemo,
     link: 'https://github.com/anfornee/countdown-react-express-mongodb-app',
     id: 1
   },
   {
     title: 'React Weather',
-    description: 'React front end using OpenWeatherMap and MapQuest APIs gets current weather for specified location',
+    description: 'MERN stack app using OpenWeatherMap and MapQuest APIs to get current weather for specified location.',
     image: weather,
-    gif: weatherGif,
+    demo: weatherDemo,
     link: 'https://github.com/anfornee/react-weather-app',
     id: 2
   },
   {
-    title: 'Angular Todo',
-    description: 'Add and view details of todo. Also be able to complete/remove todo from list.',
-    image: todo,
-    gif: '',
-    link: 'https://github.com/anfornee/angular-todo',
+    title: 'SōzōPro Twitter App',
+    description: 'Tweet your creative process without distraction, talking things out and sharing solutions. ReactJS and ExpressJS',
+    image: sozoPro,
+    demo: sozoProDemo,
+    link: 'https://github.com/anfornee/sozopro-frontend',
     id: 3
   },
   {
     title: 'Soundbridge',
-    description: 'Full MERN stack web app hitting the Spotify API for user data.',
+    description: 'Full MERN stack web app hitting the Spotify API allowing users to share what they\'re listening to and interact with other users.',
     image: soundbridge,
-    gif: soundbridgeGif,
+    demo: soundbridgeDemo,
     link: 'https://github.com/bethel-school-of-technology/soundbridge-frontend',
     id: 4
   },
@@ -45,7 +48,7 @@ export const projects = [
     title: 'Responsive Template',
     description: 'Template responsive website completely built with HTML/CSS and minimal JavaScript.',
     image: responsive,
-    gif: '',
+    demo: responsiveDemo,
     link: 'https://github.com/anfornee/responisive-template',
     id: 5
   },
@@ -53,7 +56,7 @@ export const projects = [
     title: 'React Movie Database',
     description: 'React app hitting a movie database API and displaying clickable images. Uses React Overdrive.',
     image: lumdb,
-    gif: '',
+    demo: lumdbDemo,
     link: 'https://github.com/anfornee/simple-movie-db',
     id: 6
   }
