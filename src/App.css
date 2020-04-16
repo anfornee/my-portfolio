@@ -248,7 +248,7 @@ a:hover {
 .toggle-container.top {
   opacity: 1;
   transition: .5s;
-  z-index: 1;
+  z-index: 0;
 }
 
 .toggle-container.not-top {
@@ -777,12 +777,21 @@ textarea {
     transition: .3s;
   }
 
+  .dark .pop-up-nav {
+    background: #3e3e3e;
+    border: solid 1px rgb(13, 35, 72);
+  }
+
   .close-container img {
     max-width: 35px;
     max-height: 35px;
     transform: rotate(45deg);
     padding-top: 1em;
     margin-left: 20px;
+  }
+
+  .dark .close-container img {
+    filter: invert(1)
   }
 
   .pop-up-nav-items {
@@ -797,6 +806,10 @@ textarea {
     min-width: 100%;
     padding-top: 1em;
     align-self: center;
+  }
+
+  .dark .pop-up-nav-items a {
+    color: #fff;
   }
 
   .container {
