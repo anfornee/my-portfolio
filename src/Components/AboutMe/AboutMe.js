@@ -24,7 +24,7 @@ const AboutMe = () => (
               <h1>About Me</h1>
               <p>
                 I am a design and experience focused Front End Web Developer specializing in Javascript frameworks
-                including React and AngularJS who loves to grow and learn new things. With an effective and eloquent
+                including React and Angular who loves to grow and learn new things. With an effective and eloquent
                 front end experience I believe you can tell the story of a brand and introduce yourself in a personal
                 way, connecting with the user or customer without ever meeting face to face.
               </p>
