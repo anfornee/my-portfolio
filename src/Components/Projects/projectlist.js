@@ -1,7 +1,7 @@
 import countdown from '../../assets/images/project-images/countdown.png'
 import countdownDemo from '../../assets/images/project-demos/countdown-demo.mov'
-import weather from '../../assets/images/project-images/react-weather.png'
-import weatherDemo from '../../assets/images/project-demos/weather-demo.mov'
+import check2check from '../../assets/images/project-images/check2check.png'
+import check2checkDemo from '../../assets/images/project-demos/check2check-demo.mov'
 import sozoPro from '../../assets/images/project-images/sōzōpro.png'
 import sozoProDemo from '../../assets/images/project-demos/sozopro-demo.mov'
 import soundbridge from '../../assets/images/project-images/soundbridge.png'
@@ -21,11 +21,11 @@ export const projects = [
     id: 1
   },
   {
-    title: 'React Weather',
-    description: 'MERN stack app using OpenWeatherMap and MapQuest APIs to get current weather for specified location.',
-    image: weather,
-    demo: weatherDemo,
-    link: 'https://github.com/anfornee/react-weather-app',
+    title: 'Check2Check',
+    description: 'Create a profile and track your finances with this web app built with React, Express and using MongoDB.',
+    image: check2check,
+    demo: check2checkDemo,
+    link: 'https://github.com/anfornee/check2check-frontend',
     id: 2
   },
   {
