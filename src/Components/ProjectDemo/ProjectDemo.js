@@ -1,6 +1,5 @@
 import React from 'react'
-import { Player } from 'video-react'
-import 'video-react/dist/video-react.css'
+import ReactPlayer from 'react-player'
 import { Link } from 'react-router-dom'
 import close from '../../assets/images/x-icon.png'
 
@@ -18,9 +17,7 @@ const ProjectDemo = props => {
         <h1>{project.title}</h1>
       </div>
       <div className='project-video-container'>
-        <Player
-          src={project.demo}
-        />
+        <ReactPlayer url={project.demo} controls width='100%' height='100%' />
       </div>
     </div>
   )

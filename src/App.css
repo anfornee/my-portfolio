@@ -581,8 +581,8 @@ a {
 }
 
 .project-video-container {
+  position: relative;
   width: 70%;
-  z-index: 100;
 }
 
 .demo-close {
