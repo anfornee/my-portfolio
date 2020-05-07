@@ -3,13 +3,13 @@ import countdownDemo from '../../assets/images/project-demos/countdown-demo.mp4'
 import check2check from '../../assets/images/project-images/c2c.png'
 import check2checkDemo from '../../assets/images/project-demos/check2check-demo.mp4'
 import sozoPro from '../../assets/images/project-images/sōzōpro.png'
-import sozoProDemo from '../../assets/images/project-demos/sozopro-demo.mov'
+import sozoProDemo from '../../assets/images/project-demos/sozopro-demo.mp4'
 import soundbridge from '../../assets/images/project-images/soundbridge.png'
-import soundbridgeDemo from '../../assets/images/project-demos/soundbridge-demo.mov'
+import soundbridgeDemo from '../../assets/images/project-demos/soundbridge-demo.mp4'
 import responsive from '../../assets/images/project-images/responsive-example.png'
-import responsiveDemo from '../../assets/images/project-demos/template-demo.mov'
+import responsiveDemo from '../../assets/images/project-demos/template-demo.mp4'
 import lumdb from '../../assets/images/project-images/lumdb.png'
-import lumdbDemo from '../../assets/images/project-demos/moviedb-demo.mov'
+import lumdbDemo from '../../assets/images/project-demos/moviedb-demo.mp4'
 
 export const projects = [
   {
