@@ -1,5 +1,5 @@
 import countdown from '../../assets/images/project-images/countdown.png'
-import countdownDemo from '../../assets/images/project-demos/countdown-demo.mov'
+import countdownDemo from '../../assets/images/project-demos/countdown-demo.mp4'
 import check2check from '../../assets/images/project-images/c2c.png'
 import check2checkDemo from '../../assets/images/project-demos/check2check-demo.mp4'
 import sozoPro from '../../assets/images/project-images/sōzōpro.png'
