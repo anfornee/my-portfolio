@@ -425,6 +425,7 @@ a {
   background: #C3FFC1;
   transition: .5s;
 }
+
 .dark .about-text {
   background: rgb(50, 91, 48);
   color: #fff;
@@ -983,10 +984,6 @@ textarea {
     border-radius: 45px;
   }
 
-  .image-overlay-message {
-    display: none;
-  }
-
   .icon-container {
     margin-top: 0em;
   }
@@ -1022,6 +1019,15 @@ textarea {
 
   .project-container {
     text-align: center;
+  }
+
+  .project-demo-title h1 {
+    color: rgba(0, 0, 0, 0);
+  }
+
+  .image-overlay-message {
+    height: 230px;
+    width: 230px;
   }
 
   .project-picture-container {
