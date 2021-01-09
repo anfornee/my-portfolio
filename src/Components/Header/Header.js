@@ -3,7 +3,7 @@ import { HashLink } from 'react-router-hash-link';
 
 import ham from '../../assets/images/ham-icon.png';
 import close from '../../assets/images/x-icon.png';
-import avatar from '../../assets/images/IMG_1129_smaller.JPG'
+import avatar from '../../assets/images/IMG_1129_smaller.jpeg'
 
 export default class Header extends Component {
 
