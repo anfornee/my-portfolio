@@ -46,15 +46,15 @@ export default class Header extends Component {
             <div onClick={this.closeNav} className='close-container'>
               <img src={close} alt='close' />
             </div>
-            <HashLink smooth to='/#about-section' onClick={this.closeNav}>about</HashLink>
             <HashLink smooth to='/#projects-section' onClick={this.closeNav}>projects</HashLink>
+            <HashLink smooth to='/#about-section' onClick={this.closeNav}>about</HashLink>
             <HashLink smooth to='/#contact' onClick={this.closeNav}>contact</HashLink>
           </div>
         </div>
         <div className='nav-container-desktop'>
           <div className='navbar'>
-            <HashLink smooth to='/#about-section'>about</HashLink>
             <HashLink smooth to='/#projects-section'>projects</HashLink>
+            <HashLink smooth to='/#about-section'>about</HashLink>
             <HashLink smooth to='/#contact'>contact</HashLink>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import Philo from './philo'
+import LimeForward from '../Gradients/LimeForward'
 import LimeBack from '../Gradients/LimeBack'
 
 import { philos } from './philolist'
@@ -8,15 +9,6 @@ const AboutMe = () => (
   <div id='about'>
     <div className='about-container'>
       <div className='philo-container'>
-        <div className='philo-section'>
-          {philos.map((philo, i) =>
-            <Philo
-              key={philo.id}
-              image={philo.icon}
-              description={philo.description}
-            />
-          )}
-        </div>
         <LimeBack />
         <div className='about-text-container'>
           <div className='about-text'>
@@ -32,6 +24,16 @@ const AboutMe = () => (
               </p>
             </div>
           </div>
+        </div>
+        <LimeForward />
+        <div className='philo-section'>
+          {philos.map((philo, i) =>
+            <Philo
+              key={philo.id}
+              image={philo.icon}
+              description={philo.description}
+            />
+          )}
         </div>
       </div>
     </div>

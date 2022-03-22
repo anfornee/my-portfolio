@@ -7,7 +7,6 @@ import HeroSection from './Components/HomePage/HeroSection'
 import Header from './Components/Header/Header'
 import Projects from './Components/Projects/Projects'
 import BlueForward from './Components/Gradients/BlueForward'
-import LimeForward from './Components/Gradients/LimeForward'
 import BlueBack from './Components/Gradients/BlueBack'
 import ProjectDemo from './Components/ProjectDemo/ProjectDemo'
 
@@ -21,15 +20,13 @@ const App = () => {
 
   return (
     <Router>
-      {/* <div className={darkMode ? 'App dark' : 'App'}> */}
       <div className='App'>
         <Header />
         <div className='main'>
           <HeroSection darkMode={darkMode} setDarkMode={setDarkMode} />
           <BlueForward />
-          <AboutMe />
-          <LimeForward />
           <Projects />
+          <AboutMe />
           <BlueBack />
           <Contact />
           <Route
