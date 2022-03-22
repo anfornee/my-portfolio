@@ -1,9 +1,9 @@
 import React from 'react'
 
-const BlueBack = () => {
-  return (
-    <div id='blue-back' className='blue-back' />
-  )
-}
+const BlueBack = () => (
+  <div id='blue-back' className='blue-back-outer'>
+    <div className='blue-back-inner' />
+  </div>
+)
 
 export default BlueBack

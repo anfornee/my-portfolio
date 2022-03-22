@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-
 import AboutMe from './Components/AboutMe/AboutMe'
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
@@ -15,14 +14,18 @@ import ProjectDemo from './Components/ProjectDemo/ProjectDemo'
 import './App.css'
 
 const App = () => {
-  const darkModeClassName = 'App dark'
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches)
+
+  if (darkMode) document.body.classList.add('dark')
+  else document.body.classList.remove('dark')
+
   return (
     <Router>
-      <div className={darkMode ? darkModeClassName : 'App'}>
+      {/* <div className={darkMode ? 'App dark' : 'App'}> */}
+      <div className='App'>
         <Header />
         <div className='main'>
-          <HeroSection setDarkMode={setDarkMode} />
+          <HeroSection darkMode={darkMode} setDarkMode={setDarkMode} />
           <BlueForward />
           <AboutMe />
           <LimeForward />

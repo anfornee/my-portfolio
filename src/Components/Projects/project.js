@@ -10,6 +10,10 @@ export default class Project extends Component {
   render() {
     const project = this.props.project
     const demoLink = `/project-demo/${project.id}`
+    const url = project.url
+    ? <a target='_blank' rel='noopener noreferrer' href={project.url}> • View site</a>
+    : false
+
     return (
       <div className='project-container'>
         <div className='project-picture-container'>
@@ -30,7 +34,7 @@ export default class Project extends Component {
           </Link>
         </div>
         <div className='project-description'>
-          <a href={project.link}>View code</a>
+          <a href={project.link}>View code</a>{url}
           <h2>{project.title}</h2>
           <p>{project.description}</p>
         </div>
