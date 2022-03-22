@@ -16,9 +16,13 @@ import './App.css'
 const App = () => {
   const [darkMode, setDarkMode] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches)
 
+  if (darkMode) document.body.classList.add('dark')
+  else document.body.classList.remove('dark')
+
   return (
     <Router>
-      <div className={darkMode ? 'App dark' : 'App'}>
+      {/* <div className={darkMode ? 'App dark' : 'App'}> */}
+      <div className='App'>
         <Header />
         <div className='main'>
           <HeroSection darkMode={darkMode} setDarkMode={setDarkMode} />

@@ -1,4 +1,13 @@
 /************* Globals *************/
+body {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+body.dark {
+  background: #777777;
+}
+
 .section-title {
   font-weight: 700;
   font-size: 3em;
@@ -18,54 +27,103 @@
 }
 
 /************* Gradients *************/
-.blue-back {
+.blue-back-outer {
   height: 7em;
   width: 100%;
-  background: linear-gradient(to left bottom, #fff 50%, #4DC8FF 50%);
+}
+
+.blue-back-inner {
+  height: 100%;
+  width: 100%;
+  background: #4DC8FF;
+  transform: skewY(3deg);
+  transform-origin: bottom left;
   transition: .5s;
+  position: relative;
 }
 
-.dark .blue-back {
-  background: linear-gradient(to left bottom, #777777 50%, rgb(13, 35, 72) 50%);
+.dark .blue-back-outer{
+  background: #777777;
 }
 
-.blue-forward {
+.dark .blue-back-inner {
+  background: rgb(13, 35, 72);
+}
+
+.blue-forward-outer {
   height: 7em;
   width: 100%;
-  background: linear-gradient(to right bottom, #4DC8FF 50%, #fff 50%);
+}
+
+.blue-forward-inner {
+  height: 100%;
+  width: 100%;
+  background: #4DC8FF;
+  transform: skewY(-3deg);
+  transform-origin: bottom left;
   transition: .5s;
+  position: relative;
 }
 
-.dark .blue-forward {
-  background: linear-gradient(to right bottom, rgb(13, 35, 72) 50%, #777777 50%);
+.dark .blue-forward-outer {
+  background: #777777;
 }
 
-.lime-back {
+.dark .blue-forward-inner {
+  background: rgb(13, 35, 72);
+}
+
+.lime-back-outer {
   height: 7em;
   width: 100%;
-  background: linear-gradient(to left bottom, #fff 50%, #C3FFC1 50%);
+}
+
+.lime-back-inner {
+  height: 100%;
+  width: 100%;
+  background: #C3FFC1;
+  transform: skewY(3deg);
+  transform-origin: bottom left;
   transition: .5s;
+  position: relative;
 }
 
-.dark .lime-back {
-  background: linear-gradient(to left bottom, #777777 50%, rgb(50, 91, 48) 50%);
+.dark .lime-back-outer {
+  background: #777777;
 }
 
-.lime-forward {
+.dark .lime-back-inner {
+  background: rgb(50, 91, 48);
+}
+
+.lime-forward-outer {
   height: 7em;
   width: 100%;
-  background: linear-gradient(to right bottom, #C3FFC1 50%, #fff 50%);
-  transition: .5s;
 }
 
-.dark .lime-forward {
-  background: linear-gradient(to right bottom, rgb(50, 91, 48) 50%, #777777 50%);
+.lime-forward-inner {
+  height: 100%;
+  width: 100%;
+  background: #C3FFC1;
+  transform: skewY(-3deg);
+  transform-origin: bottom left;
+  transition: .5s;
+  position: relative;
+}
+
+.dark .lime-forward-outer {
+  background: #777777;
+}
+
+.dark .lime-forward-inner {
+  background: rgb(50, 91, 48);
 }
 
 /***************  Header ***************/
 
 .header-container {
   width: 100%;
+  max-width: 2000px;
   height: 4em;
   top: 0;
   position: fixed;
@@ -327,6 +385,7 @@ a {
   animation: move .9s alternate;
   animation-delay: 3s;
   animation-iteration-count: 4;
+  z-index: 1;
 }
 
 .wait {
@@ -434,6 +493,7 @@ a {
 .about-text-container {
   width: 100%;
   background: #C3FFC1;
+  z-index: 1;
 }
 
 .about-text {
