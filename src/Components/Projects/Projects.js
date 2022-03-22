@@ -7,7 +7,7 @@ const Projects = () => (
   <div className='projects'>
     <div id='projects' />
     <div className='projects-page-container'>
-      <h1 className='projects-title'>Projects</h1>
+      <h2 className='section-title black'>Projects</h2>
       <div className='project-blue-line' />
     </div>
     <div className='projects-container'>

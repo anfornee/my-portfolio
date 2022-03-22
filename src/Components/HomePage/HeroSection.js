@@ -6,7 +6,7 @@ import Icons from '../Icons/Icons'
 // import logo from '../../assets/images/IMG_0431.jpg';
 import scroll from '../../assets/images/scroll-icon@2x.png'
 
-const HeroSection = props => (
+const HeroSection = ({ darkMode, setDarkMode }) => (
   <div id='home'>
     <div id='top' />
     <div className='container'>
@@ -16,13 +16,10 @@ const HeroSection = props => (
             <h1>Good looking code.</h1>
           </div>
           <HashLink smooth to='/#projects-section' className='projects-btn'>My Projects</HashLink>
-          <DarkModeToggle setDarkMode={props.setDarkMode} />
+          <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
           <Icons />
         </div>
       </div>
-      {/* <div className='hero-container'>
-                <img src={logo} alt='hero' />
-            </div> */}
     </div>
     <HashLink smooth to='/#about-section'>
       <div className='scroll-icon'>

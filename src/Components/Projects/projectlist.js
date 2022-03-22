@@ -1,5 +1,5 @@
-import countdown from '../../assets/images/project-images/countdown.png'
-import countdownDemo from '../../assets/images/project-demos/countdown-demo.mp4'
+import apMusic from '../../assets/images/project-images/music-site.png'
+import apMusicDemo from '../../assets/images/project-demos/music-site-demo.mp4'
 import check2check from '../../assets/images/project-images/c2c.png'
 import check2checkDemo from '../../assets/images/project-demos/check2check-demo.mp4'
 import sozoPro from '../../assets/images/project-images/sōzōpro.png'
@@ -13,11 +13,12 @@ import lumdbDemo from '../../assets/images/project-demos/moviedb-demo.mp4'
 
 export const projects = [
   {
-    title: 'React Countdown',
-    description: 'Create a profile and add/delete events with thier own countdown timers. MERN stack web app.',
-    image: countdown,
-    demo: countdownDemo,
-    link: 'https://github.com/anfornee/countdown-react-express-mongodb-app',
+    title: 'Music Portfolio',
+    description: 'For my music stuff. Built on React using HTML canvas for some cool star stuff!',
+    image: apMusic,
+    demo: apMusicDemo,
+    link: 'https://github.com/anfornee/anthony-pereira-muisic-V2',
+    url: 'https://anthonypereiramusic.com/',
     id: 1
   },
   {
@@ -26,11 +27,12 @@ export const projects = [
     image: check2check,
     demo: check2checkDemo,
     link: 'https://github.com/anfornee/check2check-frontend',
+    url: 'https://check2check.netlify.app/',
     id: 2
   },
   {
     title: 'SōzōPro Twitter App',
-    description: 'Tweet your creative process without distraction, talking things out and sharing solutions. ReactJS and ExpressJS',
+    description: 'Tweet your creative process without distraction, talking things out and sharing solutions. ReactJS, ExpressJS, Twitter API',
     image: sozoPro,
     demo: sozoProDemo,
     link: 'https://github.com/anfornee/sozopro-frontend',
@@ -38,7 +40,7 @@ export const projects = [
   },
   {
     title: 'Soundbridge',
-    description: 'Full MERN stack web app hitting the Spotify API allowing users to share what they\'re listening to and interact with other users.',
+    description: 'Full MERN stack web app using the Spotify API allowing users to share what they\'re listening to and interact with other users.',
     image: soundbridge,
     demo: soundbridgeDemo,
     link: 'https://github.com/bethel-school-of-technology/soundbridge-frontend',
@@ -54,7 +56,7 @@ export const projects = [
   },
   {
     title: 'React Movie Database',
-    description: 'React app hitting a movie database API and displaying clickable images. Uses React Overdrive.',
+    description: 'React app using TMDB API and displaying clickable images. Uses React Overdrive.',
     image: lumdb,
     demo: lumdbDemo,
     link: 'https://github.com/anfornee/simple-movie-db',

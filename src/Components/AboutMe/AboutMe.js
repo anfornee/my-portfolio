@@ -21,7 +21,7 @@ const AboutMe = () => (
         <div className='about-text-container'>
           <div className='about-text'>
             <div className='about-me'>
-              <h1>About Me</h1>
+              <h2 className='section-title black'>About Me</h2>
               <p>
                 I am a design and experience focused Front End Web Developer specializing in Javascript frameworks
                 including React and Angular who loves to grow and learn new things. With an effective and eloquent

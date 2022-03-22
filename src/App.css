@@ -1,3 +1,22 @@
+/************* Globals *************/
+.section-title {
+  font-weight: 700;
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+.section-title.black {
+  color: black;
+}
+
+.section-title.white {
+  color: white;
+}
+
+.dark .section-title.black {
+  color: white;
+}
+
 /************* Gradients *************/
 .blue-back {
   height: 7em;
@@ -553,8 +572,13 @@ a {
   text-align: center;
 }
 
+.project-description h2 {
+  margin: .8em auto .25em;
+}
+
 .project-description p {
-  margin-top: -15px;
+  margin: 0 auto;
+  width: 75%;
 }
 
 .project-demo-container {
