@@ -1,1 +1,37 @@
+$jam: #c6538c;
+$plum: #920075;
+$blueberry: #2e2157;
+$miami: #2de2e6;
+$plum2: #540d6e;
+$abyss: #0d0221;
 
+body {
+  background-color: $abyss;
+  color: $miami;
+}
+
+.App {
+  width: 100wh;
+  height: 100vh;
+  background-color: $abyss;
+  color: $miami;
+  background: linear-gradient(-45deg, $abyss, $blueberry);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}

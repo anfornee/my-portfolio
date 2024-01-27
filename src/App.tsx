@@ -1,3 +1,4 @@
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import './App.scss'
 
 const App = () => {
@@ -8,7 +9,14 @@ const App = () => {
 
   return (
     <div className='App'>
-      <h1>hello there...</h1>
+      <Parallax pages={2} style={{ top: '0', left: '0' }}>
+        <ParallaxLayer offset={0} speed={2.5}>
+          <p>hello there...</p>
+        </ParallaxLayer>
+        <ParallaxLayer offset={1} speed={2.5}>
+          <p>General Kenobi!</p>
+        </ParallaxLayer>
+      </Parallax>
     </div>
   )
 }
