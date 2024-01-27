@@ -3,17 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^4.11.2",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-overdrive": "0.0.10",
-    "react-player": "^2.7.2",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0",
-    "react-router-hash-link": "^1.2.2",
-    "react-scripts": "^3.4.4",
-    "styled-components": "^4.4.1",
-    "video-react": "^0.14.1"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "sass": "^1.70.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -35,5 +28,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "typescript": "^3.9.10"
   }
 }
