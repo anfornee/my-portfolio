@@ -115,11 +115,20 @@ export const site = {
     },
   ],
   connect: [
-    { label: "Email", href: "mailto:contact@theanthonypereira.com" },
+    {
+      label: "Email",
+      href: "mailto:contact@theanthonypereira.com",
+      opensInNewTab: false,
+    },
     {
       label: "LinkedIn",
       href: "https://www.linkedin.com/in/anthony-luis-pereira",
+      opensInNewTab: true,
     },
-    { label: "GitHub", href: "https://github.com/anfornee" },
+    {
+      label: "GitHub",
+      href: "https://github.com/anfornee",
+      opensInNewTab: true,
+    },
   ],
 } as const;

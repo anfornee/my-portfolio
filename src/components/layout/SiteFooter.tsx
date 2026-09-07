@@ -17,7 +17,17 @@ export function SiteFooter() {
 
 					<nav className="site-footer__links" aria-label="Connect links">
 						{site.connect.map((item) => (
-							<TextLink key={item.href} href={item.href}>
+							<TextLink
+								key={item.href}
+								href={item.href}
+								target={item.opensInNewTab ? '_blank' : undefined}
+								rel={item.opensInNewTab ? 'noopener noreferrer' : undefined}
+								aria-label={
+									item.opensInNewTab
+										? `${item.label} (opens in a new tab)`
+										: item.label
+								}
+							>
 								{item.label}
 							</TextLink>
 						))}
