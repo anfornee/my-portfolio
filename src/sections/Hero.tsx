@@ -23,8 +23,10 @@ export function Hero() {
 						{site.hero.description}
 					</p>
 
+					<p className="hero__personal">{site.hero.personal}</p>
+
 					<div className="hero__actions" aria-label="Portfolio shortcuts">
-						<TextLink href="#work">View my work</TextLink>
+						<TextLink href="#work">My work</TextLink>
 						<TextLink href="#story">My story</TextLink>
 					</div>
 				</div>

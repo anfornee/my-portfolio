@@ -1,8 +1,13 @@
 import { SiteFooter } from './components/layout/SiteFooter';
 import { SiteHeader } from './components/layout/SiteHeader';
+import { CareerPath } from './sections/CareerPath';
 import { Hero } from './sections/Hero';
-import { StoryPreview } from './sections/StoryPreview';
-import { WorkPreview } from './sections/WorkPreview';
+import { HowIThink } from './sections/HowIThink';
+import { HowIWork } from './sections/HowIWork';
+import { Range } from './sections/Range';
+import { SelectedWork } from './sections/SelectedWork';
+import { Technology } from './sections/Technology';
+import { Values } from './sections/Values';
 
 export default function App() {
 	return (
@@ -15,8 +20,13 @@ export default function App() {
 
 			<main id="main-content">
 				<Hero />
-				<WorkPreview />
-				<StoryPreview />
+				<HowIThink />
+				<SelectedWork />
+				<HowIWork />
+				<Range />
+				<CareerPath />
+				<Values />
+				<Technology />
 			</main>
 
 			<SiteFooter />

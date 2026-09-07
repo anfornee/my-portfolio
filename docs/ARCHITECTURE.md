@@ -45,6 +45,12 @@ Static site content and navigation.
 
 Separating content from presentation makes future editing safer and reduces duplicated markup.
 
+`src/data/site.ts` owns concise, repeated homepage content: hero copy,
+navigation, working principles, range examples, values, technology groups, and
+connect destinations. Longer editorial narratives stay in their section
+components so the relationship between copy and semantic structure remains easy
+to follow.
+
 ### `motion`
 
 All custom animation systems.
@@ -62,11 +68,20 @@ Animation code should not leak into unrelated layout components.
 Page-level compositions such as:
 
 - `Hero`
-- `WorkPreview`
-- `StoryPreview`
+- `HowIThink`
+- `SelectedWork`
+- `HowIWork`
+- `Range`
+- `CareerPath`
+- `Values`
+- `Technology`
 - future case-study sections
 
 Sections may compose layout and UI primitives but should not redefine global design rules.
+
+The homepage reading order is assembled in `src/App.tsx`. The content sections
+share restrained editorial layout rules in `src/sections/ContentSections.css`.
+Project-specific and long-form copy remains in the section that owns it.
 
 ### `styles`
 

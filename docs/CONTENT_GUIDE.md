@@ -49,6 +49,20 @@ Themes:
 - making complex work feel simple
 - engineering that supports rather than interrupts the experience
 
+## Editing the homepage
+
+- Edit hero copy, navigation, repeated principles, range examples, values,
+  technology groups, and connect destinations in `src/data/site.ts`.
+- Edit Baymax positioning and architectural decisions in
+  `src/sections/SelectedWork.tsx`.
+- Edit the AI workflow callout in `src/sections/HowIWork.tsx`.
+- Edit the coffee, audio, and software narrative in
+  `src/sections/CareerPath.tsx`.
+- Change homepage section order in `src/App.tsx`.
+
+Keep long editorial passages close to their semantic markup. Use data arrays for
+short repeated content where consistent structure makes updates safer.
+
 ## Avoid
 
 Avoid generic language such as:

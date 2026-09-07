@@ -3,7 +3,6 @@
 	display: grid;
 	min-height: calc(100svh - 4.5rem);
 	align-items: center;
-	overflow: hidden;
 	padding-block: clamp(4rem, 10vh, 8rem) var(--space-7);
 }
 
@@ -54,10 +53,16 @@
 }
 
 .hero__description {
-	max-width: 42rem;
+	max-width: 48rem;
 	margin-top: var(--space-6);
 	color: var(--color-text-supporting);
 	font-size: var(--text-lg);
+}
+
+.hero__personal {
+	max-width: 46rem;
+	margin-top: var(--space-4);
+	color: var(--color-text-secondary);
 }
 
 .hero__actions {
