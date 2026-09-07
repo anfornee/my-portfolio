@@ -1,68 +1,99 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Anthony Pereira — Developer Portfolio
 
-## Available Scripts
+A personal developer portfolio built with React, TypeScript, and Vite.
 
-In the project directory, you can run:
+The site is designed around a simple idea:
 
-### `npm start`
+> I build software you notice by how it feels.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The visual language combines restrained cyberpunk-sunset atmosphere with editorial typography, subtle motion, and a signal-path motif representing:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+**craft → signal → systems → software**
 
-### `npm test`
+## Philosophy
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This portfolio is intentionally simple.
 
-### `npm run build`
+The goal is not to showcase every technology I have used or every project I have touched. It is to communicate how I think about software:
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- clarity over novelty
+- usability over spectacle
+- maintainability over cleverness
+- thoughtful systems over isolated features
+- engineering that supports the developer and user experiences instead of competing with them
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+The design draws from my background in coffee, audio engineering, and enterprise software development.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tech
 
-### `npm run eject`
+- React
+- TypeScript
+- Vite
+- CSS
+- Canvas
+- SVG
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The project intentionally avoids unnecessary runtime dependencies.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Accessibility
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Accessibility is treated as part of the product and engineering foundation, not as a final compliance pass.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The goal is for the site to feel polished without making that polish dependent on a specific input method, visual ability, or motion preference.
 
-## Learn More
+The site aims for WCAG 2.2 AA and is built around a few core principles:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- semantic HTML and clear document structure
+- logical heading hierarchy and navigation landmarks
+- complete keyboard accessibility
+- visible `:focus-visible` states
+- readable color contrast and typography
+- no information conveyed by color alone
+- no hover-only interactions
+- responsive reflow at narrow widths and high zoom levels
+- generous touch targets where appropriate
+- decorative Canvas and SVG elements hidden from assistive technology
+- no scroll hijacking or custom cursor behavior
+- motion that enhances the experience without being required to understand it
+- full support for `prefers-reduced-motion`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The ambient particles, blurred lights, and signal-path animation are intentionally decorative. If motion is reduced or unavailable, the content and hierarchy remain complete.
 
-### Code Splitting
+Accessibility decisions should favor clarity and predictability over visual novelty.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+See:
 
-### Analyzing the Bundle Size
+- `docs/ACCESSIBILITY.md`
+- `docs/MOTION.md`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## Visual System
 
-### Making a Progressive Web App
+The site uses a restrained dark palette with subtle neon accents.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Core ideas:
 
-### Advanced Configuration
+- midnight indigo surfaces
+- soft magenta and blue atmospheric glows
+- sparse ambient particles
+- abstract signal-path animation
+- large editorial typography
+- generous negative space
+- subtle interaction motion
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Motion is decorative and never required to understand content.
 
-### Deployment
+`prefers-reduced-motion` is respected throughout the site.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+## Architecture
 
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```text
+src/
+├── components/
+│   ├── layout/
+│   └── ui/
+├── data/
+├── motion/
+├── sections/
+├── styles/
+├── App.tsx
+└── main.tsx

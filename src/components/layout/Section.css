@@ -1,0 +1,23 @@
+.section {
+	padding-block: var(--space-10);
+	scroll-margin-top: 6rem;
+}
+
+.section__header {
+	display: grid;
+	gap: var(--space-4);
+	max-width: 48rem;
+	margin-bottom: var(--space-7);
+}
+
+.section__title {
+	font-size: var(--text-2xl);
+	font-weight: 650;
+	letter-spacing: var(--tracking-heading);
+}
+
+@media (max-width: 48rem) {
+	.section {
+		padding-block: var(--space-9);
+	}
+}

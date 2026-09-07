@@ -1,0 +1,119 @@
+.signal-path {
+	position: relative;
+	width: 100%;
+	margin-top: clamp(4rem, 10vh, 8rem);
+}
+
+.signal-path--horizontal svg {
+	width: 100%;
+	height: clamp(5.75rem, 10.5vw, 7.25rem);
+	overflow: visible;
+}
+
+.signal-path--vertical {
+	width: min(100%, 20rem);
+	margin-inline: auto;
+}
+
+.signal-path--vertical svg {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 7 / 12;
+	overflow: visible;
+}
+
+.signal-path__base,
+.signal-path__energy {
+	fill: none;
+	vector-effect: non-scaling-stroke;
+}
+
+.signal-path__base {
+	stroke: var(--color-border);
+	stroke-width: 1;
+}
+
+.signal-path__energy {
+	stroke: url('#signal-gradient');
+	stroke-width: 1.4;
+	stroke-linecap: round;
+	stroke-dasharray: 84 250;
+	animation: signal-flow var(--duration-ambient) linear infinite;
+}
+
+.signal-path__node {
+	fill: var(--color-background);
+	stroke: var(--color-text-secondary);
+	stroke-width: 1;
+	vector-effect: non-scaling-stroke;
+}
+
+.signal-path__pulse {
+	fill: var(--color-text-primary);
+	opacity: 0.88;
+}
+
+.signal-path__labels {
+	position: absolute;
+	inset: 0;
+	color: var(--color-text-secondary);
+	font-family: var(--font-mono);
+	font-size: var(--text-xs);
+	letter-spacing: var(--tracking-label);
+	pointer-events: none;
+	text-transform: uppercase;
+}
+
+.signal-path__labels span {
+	position: absolute;
+	line-height: 1;
+	white-space: nowrap;
+}
+
+.signal-path--horizontal .signal-path__labels span {
+	transform: translate(-50%, -50%);
+}
+
+.signal-path--vertical .signal-path__labels span {
+	transform: translateY(-50%);
+}
+
+@keyframes signal-flow {
+	to {
+		stroke-dashoffset: -334;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.signal-path__energy {
+		animation: none;
+	}
+
+	.signal-path__traveler,
+	.signal-path__bloom,
+	.signal-path__node-fill {
+		display: none;
+	}
+}
+
+.signal-path__traveler,
+.signal-path__bloom,
+.signal-path__node-fill {
+	opacity: 0;
+}
+
+.signal-path__bloom {
+	fill: url('#node-bloom');
+}
+
+.signal-path__diffuse-light {
+	fill: url('#signal-bloom');
+}
+
+.signal-path__node-fill {
+	fill: var(--color-particle-warm);
+}
+
+.signal-path__diffuse-light {
+	opacity: 0.6;
+}
