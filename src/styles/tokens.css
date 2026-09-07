@@ -1,0 +1,85 @@
+:root {
+	--color-background: #0d0b18;
+	--color-surface: #161226;
+	--color-surface-hover: #1f1933;
+
+	--color-text-primary: #ffffff;
+	--color-text-secondary: #9f99b7;
+
+	--color-accent: #ff00a0;
+	--color-text-supporting: color-mix(in srgb, var(--color-text-secondary) 88%, var(--color-text-primary));
+	--color-particle-warm: #e8c6b8;
+	--color-glow-pink: rgb(255 0 160 / 8%);
+	--color-atmosphere-blue: #00bfff;
+	--color-glow-blue: rgb(0 191 255 / 5%);
+
+	--color-selection: #1f1135;
+
+	--color-success: #05f2db;
+	--color-warning: #ff9a00;
+	--color-error: #ff124f;
+	--color-info: #00bfff;
+
+	--color-border: rgb(159 153 183 / 16%);
+	--color-border-strong: rgb(159 153 183 / 28%);
+
+	--font-sans:
+		Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", sans-serif;
+	--font-mono:
+		"SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+
+	--text-xs: 0.75rem;
+	--text-sm: 0.875rem;
+	--text-base: 1rem;
+	--text-lg: clamp(1.05rem, 1.5vw, 1.2rem);
+	--text-xl: clamp(1.25rem, 2vw, 1.55rem);
+	--text-2xl: clamp(1.75rem, 3vw, 2.5rem);
+	--text-display: clamp(3.2rem, 8vw, 7.75rem);
+
+	--leading-tight: 0.94;
+	--leading-heading: 1.08;
+	--leading-body: 1.65;
+
+	--tracking-tight: -0.045em;
+	--tracking-heading: -0.025em;
+	--tracking-label: 0.12em;
+
+	--space-1: 0.25rem;
+	--space-2: 0.5rem;
+	--space-3: 0.75rem;
+	--space-4: 1rem;
+	--space-5: 1.5rem;
+	--space-6: 2rem;
+	--space-7: 3rem;
+	--space-8: 4rem;
+	--space-9: 6rem;
+	--space-10: 8rem;
+
+	--radius-sm: 0.5rem;
+	--radius-md: 0.875rem;
+	--radius-lg: 1.25rem;
+	--radius-pill: 999px;
+
+	--container-width: 76rem;
+	--container-gutter: clamp(1.25rem, 4vw, 3rem);
+
+	--duration-fast: 140ms;
+	--duration-normal: 220ms;
+	--duration-slow: 420ms;
+	--duration-ambient: 12s;
+	--duration-signal: 14s;
+	--duration-glow: 32s;
+	--glow-drift: 2%;
+	--glow-scale: 1.035;
+
+	--ease-standard: cubic-bezier(0.2, 0.8, 0.2, 1);
+	--ease-emphasized: cubic-bezier(0.16, 1, 0.3, 1);
+
+	--blur-sm: 12px;
+	--blur-md: 32px;
+	--blur-lg: 80px;
+	--blur-xl: 140px;
+
+	--shadow-focus: 0 0 0 3px rgb(255 0 160 / 32%);
+}

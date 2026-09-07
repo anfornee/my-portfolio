@@ -1,75 +1,99 @@
-# React + TypeScript + Vite
+# Anthony Pereira — Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal developer portfolio built with React, TypeScript, and Vite.
 
-Currently, two official plugins are available:
+The site is designed around a simple idea:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+> I build software you notice by how it feels.
 
-## React Compiler
+The visual language combines restrained cyberpunk-sunset atmosphere with editorial typography, subtle motion, and a signal-path motif representing:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**craft → signal → systems → software**
 
-## Expanding the ESLint configuration
+## Philosophy
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This portfolio is intentionally simple.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+The goal is not to showcase every technology I have used or every project I have touched. It is to communicate how I think about software:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- clarity over novelty
+- usability over spectacle
+- maintainability over cleverness
+- thoughtful systems over isolated features
+- engineering that supports the developer and user experiences instead of competing with them
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+The design draws from my background in coffee, audio engineering, and enterprise software development.
 
-```
+## Tech
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+- React
+- TypeScript
+- Vite
+- CSS
+- Canvas
+- SVG
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+The project intentionally avoids unnecessary runtime dependencies.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Accessibility
 
-```
+Accessibility is treated as part of the product and engineering foundation, not as a final compliance pass.
+
+The goal is for the site to feel polished without making that polish dependent on a specific input method, visual ability, or motion preference.
+
+The site aims for WCAG 2.2 AA and is built around a few core principles:
+
+- semantic HTML and clear document structure
+- logical heading hierarchy and navigation landmarks
+- complete keyboard accessibility
+- visible `:focus-visible` states
+- readable color contrast and typography
+- no information conveyed by color alone
+- no hover-only interactions
+- responsive reflow at narrow widths and high zoom levels
+- generous touch targets where appropriate
+- decorative Canvas and SVG elements hidden from assistive technology
+- no scroll hijacking or custom cursor behavior
+- motion that enhances the experience without being required to understand it
+- full support for `prefers-reduced-motion`
+
+The ambient particles, blurred lights, and signal-path animation are intentionally decorative. If motion is reduced or unavailable, the content and hierarchy remain complete.
+
+Accessibility decisions should favor clarity and predictability over visual novelty.
+
+See:
+
+- `docs/ACCESSIBILITY.md`
+- `docs/MOTION.md`
+
+## Visual System
+
+The site uses a restrained dark palette with subtle neon accents.
+
+Core ideas:
+
+- midnight indigo surfaces
+- soft magenta and blue atmospheric glows
+- sparse ambient particles
+- abstract signal-path animation
+- large editorial typography
+- generous negative space
+- subtle interaction motion
+
+Motion is decorative and never required to understand content.
+
+`prefers-reduced-motion` is respected throughout the site.
+
+## Architecture
+
+```text
+src/
+├── components/
+│   ├── layout/
+│   └── ui/
+├── data/
+├── motion/
+├── sections/
+├── styles/
+├── App.tsx
+└── main.tsx

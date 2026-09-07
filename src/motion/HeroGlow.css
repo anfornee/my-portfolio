@@ -1,0 +1,18 @@
+.hero::before,
+.hero::after {
+ animation: hero-glow var(--duration-glow) ease-in-out infinite alternate;
+}
+
+.hero::after {
+ animation-direction: alternate-reverse;
+}
+
+@keyframes hero-glow {
+ from { transform: translate(0, 0) scale(1); }
+ to { transform: translate(var(--glow-drift), calc(-1 * var(--glow-drift))) scale(var(--glow-scale)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+ .hero::before,
+ .hero::after { animation: none; }
+}
